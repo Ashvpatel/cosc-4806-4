@@ -8,5 +8,11 @@ class Reminders extends Controller {
 
       $this->view('reminders/index', ['reminders' => $list_of_reminders]);
     }
-}
+    public function create() {
+      $reminder = $this->model('Reminder');
+      $this->view('reminders/create');
+    }
+  }
+  
+
 ?>
