@@ -24,12 +24,14 @@
                     <tr>
                         <th scope="row"><?php echo htmlspecialchars($reminder['id']); ?></th>
                         <td><?php echo htmlspecialchars($reminder['user_id']); ?></td>
-                        <td><?php echo htmlspecialchars($reminder['subjec']); ?></td>
+                        <td><?php echo htmlspecialchars($reminder['subject']); ?></td>
                         <td><?php echo htmlspecialchars($reminder['created_at']); ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
+     <p><a href="/reminders/update">Update</a></p>
+     <p><a href="/reminders/delete">Delete</a></p>
     <?php else: ?>
         <p>No reminders found.</p>
     <?php endif; ?>
